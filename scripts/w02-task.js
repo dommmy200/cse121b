@@ -34,22 +34,27 @@ imageElement.setAttribute("alt", `Profile image of ${fullName}`);
 /* Step 5 - Array */
 let favoriteFood = ["Roasted Yam","Vegetable Soup", "Porridge Beans", "Boiled Eggs", "Pounded Yam"];
 let bestFood = "Bean Cake";
+for (const myFood of favoriteFood)
+{
+    foodElement.innerHTML += `${myFood}<br>`;
+}
+
 favoriteFood.push(bestFood);
 for (const myFood of favoriteFood)
 {
-    foodElement.innerHTML += `<br>${myFood},`;
+    foodElement.innerHTML += `${myFood}<br>`;
 }
 
 favoriteFood.shift();
 for (const myFood of favoriteFood)
 {
-    foodElement.innerHTML += `<br>${myFood},`;
+    foodElement.innerHTML += `${myFood}<br>`;
 }
 
 favoriteFood.pop();
 for (const myFood of favoriteFood)
 {
-    foodElement.innerHTML += `<br>${myFood},`;
+    foodElement.innerHTML += `${myFood}<br>`;
 }
 
 
