@@ -34,27 +34,46 @@ imageElement.setAttribute("alt", `Profile image of ${fullName}`);
 /* Step 5 - Array */
 let favoriteFood = ["Roasted Yam","Vegetable Soup", "Porridge Beans", "Boiled Eggs", "Pounded Yam"];
 let bestFood = "Bean Cake";
+
 for (const myFood of favoriteFood)
 {
-    foodElement.innerHTML += `${myFood}<br>`;
+    if (favoriteFood[favoriteFood.length-1] != myFood)
+    {
+        foodElement.innerHTML += `${myFood}, `;
+    } else {
+        foodElement.innerHTML += `${myFood}<br>`;
+    }
 }
 
 favoriteFood.push(bestFood);
 for (const myFood of favoriteFood)
 {
-    foodElement.innerHTML += `${myFood}<br>`;
+    if (favoriteFood[favoriteFood.length-1] != myFood)
+    {
+        foodElement.innerHTML += `${myFood}, `;
+    } else {
+        foodElement.innerHTML += `${myFood}<br>`;
+    }
 }
-
 favoriteFood.shift();
 for (const myFood of favoriteFood)
 {
-    foodElement.innerHTML += `${myFood}<br>`;
+    if (favoriteFood[favoriteFood.length-1] != myFood)
+    {
+        foodElement.innerHTML += `${myFood}, `;
+    } else {
+        foodElement.innerHTML += `${myFood}<br>`;
+    }
 }
-
 favoriteFood.pop();
 for (const myFood of favoriteFood)
 {
-    foodElement.innerHTML += `${myFood}<br>`;
+    if (favoriteFood[favoriteFood.length-1] != myFood)
+    {
+        foodElement.innerHTML += `${myFood}, `;
+    } else {
+        foodElement.innerHTML += `${myFood}<br>`;
+    }
 }
 
 
