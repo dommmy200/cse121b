@@ -85,7 +85,7 @@ document.querySelector("#odds").innerHTML = numbersArray.filter(number => number
 document.querySelector("#evens").innerHTML = numbersArray.filter(number => number%2 === 0);
 
 /* Output Sum of Org. Array */
-document.querySelector("#sunOfArray").innerHTML = numbersArray.reduce((accumulator,currentValue) => accumulator+currentValue);
+document.querySelector("#sumOfArray").innerHTML = numbersArray.reduce((accumulator,currentValue) => accumulator + currentValue);
 
 /* Output Multiplied by 2 Array */
 const mappedArray = numbersArray.map(number => number *2);
