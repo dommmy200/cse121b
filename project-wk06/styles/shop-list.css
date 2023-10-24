@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+* {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: gray;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+.title {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.shop {
+    font-size: 40px;
+    color: rgb(53, 3, 13);
+}
+#item-name, #item-quantity, #item-price {
+    height: 35px;
+    border-radius: 5px;
+    font-size: large;
+    padding: 0px;
+}

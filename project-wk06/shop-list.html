@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="./styles/shop-list.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Shopping list Project</h1>
+    </div>
+    <div id="shopping-list">
+        <!-- The various inputs are grabbed here -->
+        <div class="shop name">
+            <label for="item-name">Item</label>
+            <input id="item-name" type="text" placeholder="Item Name">
+        </div>
+       <div class="shop quantity">
+            <label for="item-quantity">Quantity</label>
+            <input id="item-quantity" type="number" placeholder="Quantity">
+       </div>
+        <div class="shop price">
+            <label for="item-price">Price</label>
+            <input id="item-price" type="number" step="0.01" placeholder="Unit Price">
+        </div>
+        
+        <!-- Creation of a text area is left for further development. Proving difficult to manipulate-->
+       
+        <!--div class="text-area">
+        <label for="text-area"></label>
+        <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Enter comments and remarks"></textarea>
+       </div-->
+        <ul id="item-list">
+            <!-- Shopping list items are populated here -->
+        </ul>
+        <div class="buttons" id="buttons">
+            <button class="add-item" id="add-item">Add Item</button>
+            <button class="save-list" id="save-list">Save This Entry</button>
+        </div>
+    </div>
+    <div>
+        <span id="year"></span>
+    </div>
+    <script>
+        const date = new Date();
+        const dateString = date.toDateString();
+        document.getElementById("year").innerHTML = `<strong>${dateString}</strong>`;
+    </script>    
+    <script src="./scripts/shop-list.js"></script>
+</body>
+</html>

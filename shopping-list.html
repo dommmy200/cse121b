@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <!--link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet" -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles/shopping-list.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Shopping List</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="itemName">Item</label>
+                <input type="text" placeholder="item for purchase" id="itemName" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="price">Price</label>
+                <input type="text" placeholder="price per unit of item" id="price" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="quantity">Quantity</label>
+                <input type="text" placeholder="total number of item" id="quantity"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts/shoppingList.js"></script>
+</body>
+</html>
